@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MyPortfolio</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
+	<head>
+		<title>Veronica Maxwell - Part Developer, Part Chef</title>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
   <body>
+  	<header id="main_navigation" class="clearfix">
+			<a href="#" class="name">Veronica Maxwell</a>
+			<nav>
+				<%= link_to "Articles", posts_path %>
+				<a href="#">Projects</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
     <%= yield %>
+
   </body>
 </html>
