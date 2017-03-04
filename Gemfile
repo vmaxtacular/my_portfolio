@@ -15,6 +15,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'sdoc', '~> 0.4.2' 
+gem 'pygments.rb', '~> 1.1', '>= 1.1.1'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
