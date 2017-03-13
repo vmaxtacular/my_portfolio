@@ -25,6 +25,7 @@ gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'guard'
 end
 
 group :development do
